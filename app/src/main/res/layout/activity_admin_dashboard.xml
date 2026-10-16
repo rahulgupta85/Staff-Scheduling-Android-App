@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".admin.AdminDashboardActivity">
+
+    <!-- Top Toolbar -->
+<com.google.android.material.appbar.MaterialToolbar
+android:id="@+id/toolbar"
+android:layout_width="match_parent"
+android:layout_height="?attr/actionBarSize"
+android:background="@color/my_app_primary"
+app:title="Dashboard"
+app:titleTextColor="@android:color/white"
+app:menu="@menu/dashboard_toolbar_menu"/>
+
+    <!-- Fragment container -->
+<FrameLayout
+android:id="@+id/fragment_container"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_below="@id/toolbar"
+android:layout_above="@id/bottom_navigation"/>
+
+    <!-- Bottom navigation -->
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/bottom_navigation"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:background="@drawable/bottom_nav_background"
+app:itemIconTint="@color/bottom_nav_icon_color"
+app:itemTextColor="@color/bottom_nav_icon_color"
+app:labelVisibilityMode="labeled"
+app:menu="@menu/admin_bottom_nav_menu" />
+
+    </RelativeLayout>

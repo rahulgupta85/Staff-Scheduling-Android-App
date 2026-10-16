@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This is the color when the icon is selected (checked) -->
+    <item android:state_checked="true" android:color="@color/purple_700" />
+
+    <!-- This is the default color for unselected icons -->
+    <item android:color="@color/gray"/>
+</selector>

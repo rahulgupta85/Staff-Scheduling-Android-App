@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageViewPanda"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_panda_sleeping"
+        android:contentDescription="No announcements"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No announcements created yet!"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="?android:attr/textColorSecondary"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

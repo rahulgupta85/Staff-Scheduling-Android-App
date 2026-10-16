@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EduShift</string>
+
+
+    <string-array name="user_roles">
+        <item>Admin</item>
+        <item>Teacher</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

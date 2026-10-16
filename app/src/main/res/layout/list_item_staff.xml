@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E0E0E0"
+    style="?attr/materialCardViewFilledStyle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Staff Avatar -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/staff_avatar"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/ic_person_avatar"
+            android:contentDescription="Staff Avatar"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!-- Delete Button 🔥 -->
+        <ImageButton
+            android:id="@+id/btn_delete_staff"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Delete Staff"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/my_app_primary"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Staff Name -->
+        <TextView
+            android:id="@+id/textViewStaffName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textStyle="bold"
+            tools:text="Staff Name"
+            app:layout_constraintStart_toEndOf="@id/staff_avatar"
+            app:layout_constraintTop_toTopOf="@id/staff_avatar"
+            app:layout_constraintEnd_toStartOf="@id/btn_delete_staff"/>
+
+        <!-- Staff Email -->
+        <TextView
+            android:id="@+id/textViewStaffEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?android:attr/textColorSecondary"
+            tools:text="staff.email@school.com"
+            app:layout_constraintStart_toStartOf="@id/textViewStaffName"
+            app:layout_constraintTop_toBottomOf="@id/textViewStaffName"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
